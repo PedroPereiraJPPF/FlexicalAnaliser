@@ -1,7 +1,8 @@
 package com.analisadorlexico;
 import java.io.FileReader;
 import java.util.Map;
-import com.analisadorlexico.LexicalAnaliser.Lexer;
+
+import com.analisadorlexico.lexicalanalyzer.Lexer;
 
 public class Main {
      public static void main(String[] args) throws Exception {

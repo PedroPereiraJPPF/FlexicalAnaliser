@@ -1,11 +1,10 @@
-package com.analisadorlexico.LexicalAnaliser;
+package com.analisadorlexico.lexicalanalyzer;
 
 import java.io.StringReader;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
-import com.analisadorlexico.LexicalAnaliser.Token;
 
 %%
 
