@@ -13,6 +13,27 @@
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.36</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>java_cup</groupId>
+            <artifactId>java_cup</artifactId>
+            <version>0.9e</version>
+        </dependency>
+
+        <dependency>
+            <groupId>de.jflex</groupId>
+            <artifactId>jflex</artifactId>
+            <version>1.9.1</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -57,26 +78,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.36</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>java_cup</groupId>
-            <artifactId>java_cup</artifactId>
-            <version>0.9e</version>
-        </dependency>
-
-        <dependency>
-            <groupId>de.jflex</groupId>
-            <artifactId>jflex</artifactId>
-            <version>1.9.1</version>
-        </dependency>
-    </dependencies>
 
 </project>

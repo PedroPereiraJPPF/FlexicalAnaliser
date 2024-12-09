@@ -77,7 +77,7 @@ LessThan       = "<"
 Equal         = "="
 GreaterOrEqual = ">="
 LessOrEqual    = "<="
-EspecialSymbol = {LeftParen} | {RightParen} | {LeftBracket} | {RightBracket} | {Comma} | {GreaterThan} | {LessThan} | {LeftBrace} | {RightBrace} | {Equal} | {GreaterOrEqual} | {LessOrEqual}
+SpecialSymbol = {LeftParen} | {RightParen} | {LeftBracket} | {RightBracket} | {Comma} | {GreaterThan} | {LessThan} | {LeftBrace} | {RightBrace} | {Equal} | {GreaterOrEqual} | {LessOrEqual}
 
 %%
 
@@ -88,7 +88,7 @@ EspecialSymbol = {LeftParen} | {RightParen} | {LeftBracket} | {RightBracket} | {
 {Property}     { properties.put(yytext().toUpperCase(), 0); symbolTable.put("properties", properties); }
 {Individual}   { individuals.put(yytext().toUpperCase(), 0); symbolTable.put("individuals", individuals); }
 {Cardinalidade} { cardinalities.put(yytext().toUpperCase(), 0); symbolTable.put("cardinalities", cardinalities); }
-{EspecialSymbol} { especialSymbols.put(yytext().toUpperCase(), 0); symbolTable.put("especialSymbols", especialSymbols); }
+{SpecialSymbol} { especialSymbols.put(yytext().toUpperCase(), 0); symbolTable.put("especialSymbols", especialSymbols); }
 {Namespace}    { namespaces.put(yytext().toUpperCase(), 0); symbolTable.put("namespaces", namespaces); }
 {Spaces}       { /* ignore */ }
 .              { throw new RuntimeException("Illegal character <" + yytext() + ">"); }

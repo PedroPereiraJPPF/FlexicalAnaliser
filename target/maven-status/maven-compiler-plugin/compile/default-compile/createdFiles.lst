@@ -1,3 +1,2 @@
-com/analisadorlexico/Main.class
-com/analisadorlexico/LexicalAnaliser/Token.class
-com/analisadorlexico/LexicalAnaliser/Lexer.class
+com\analisadorlexico\Main.class
+com\analisadorlexico\lexicalanalyzer\Lexer.class
