@@ -1,10 +1,10 @@
-***Analisador Léxico para OWL com Manchester Syntax***
+# ***Analisador Léxico para OWL com Manchester Syntax***
 
 Este projeto toma como objetivo implementar um analisador léxico da
 linguagem OWL2 (Web Ontology Language) da sua forma de Manchester Syntax
 com suas instruções simplificadas.
 
-**Sumário**
+# **Sumário**
 
 -   Ferramentas utilizadas
 
@@ -12,7 +12,7 @@ com suas instruções simplificadas.
 
 -   Como usar?
 
-**Ferramentas Utilizadas**
+# **Ferramentas Utilizadas**
 
 Nesse projeto decidimos utilizar a linguagem de programação Java em sua
 versão 21, pois é a versão mais atual marcada como LTS (Long-Term
@@ -36,20 +36,15 @@ programa.
 
 Links para guias de instalação:
 
--   JDK 21 (Java):
-    > [[Windows]{.underline}](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-install-Java-21)
-    > e
-    > [[Linux]{.underline}](https://www.hostinger.com.br/tutoriais/como-instalar-java-no-ubuntu).
+-   JDK 21 (Java): [[Windows]](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-install-Java-21) e [[Linux]](https://www.hostinger.com.br/tutoriais/como-instalar-java-no-ubuntu).
 
--   [[Apache
-    > Maven]{.underline}](https://medium.com/@januario86/o-que-%C3%A9-o-maven-e-como-instalar-1d5e9f29ac4c)
+-   [[Apache Maven]](https://medium.com/@januario86/o-que-%C3%A9-o-maven-e-como-instalar-1d5e9f29ac4c)
 
--   [[Visual Studio
-    > Code]{.underline}](https://code.visualstudio.com/download)
+-   [[Visual Studio Code]](https://code.visualstudio.com/download)
 
--   [[Git]{.underline}](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
+-   [[Git]](https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git)
 
-**Analisador Léxico**
+# **Analisador Léxico**
 
 O analisador léxico produzido é capaz de reconhecer um grupo
 pré-definido de lexemas, dentre eles estão algumas palavras reservadas,
@@ -68,13 +63,12 @@ analisado pelo interpretador, mas ele não possui nenhuma particularidade
 além de ter de ser escrito em OWL 2 com Manchester Syntax para ser
 devidamente interpretado.
 
-**Como Usar?**
+# **Como Usar?**
 
 Supondo que tenha-se todos os programas requeridos já instalados, siga o
 passo a passo a seguir:
 
-1.  Clone o seguinte repositório do github através do git clone ou
-    > baixe-o diretamente.
+1.  Clone o seguinte repositório do github através do git clone ou baixe-o diretamente.
 
 2.  Abra o diretório com o VSCode.
 
@@ -82,12 +76,6 @@ passo a passo a seguir:
 
 4.  Entre no arquivo Main.java e rode o programa.
 
-5.  O programa produzirá um grande texto no terminal, esse texto é
-    > separado em três partes: A contagem de ocorrências, que conta o
-    > número de ocorrências de cada lexema; a tabela de símbolos, que
-    > exibe quais símbolos de cada lexema foram encontrados; e a barra
-    > de busca, onde você pode digitar o nome de qualquer lexema (de
-    > acordo com a nomenclatura encontrada nas outras tabelas) e obter a
-    > parte da tabela de símbolos daquele lexema.
+5.  O programa produzirá um grande texto no terminal, esse texto é separado em três partes: A contagem de ocorrências, que conta o número de ocorrências de cada lexema; a tabela de símbolos, que exibe quais símbolos de cada lexema foram encontrados; e a barra de busca, onde você pode digitar o nome de qualquer lexema (de acordo com a nomenclatura encontrada nas outras tabelas) e obter a parte da tabela de símbolos daquele lexema.
 
 6.  Digite "sair" na barra de busca para encerrar o programa.
