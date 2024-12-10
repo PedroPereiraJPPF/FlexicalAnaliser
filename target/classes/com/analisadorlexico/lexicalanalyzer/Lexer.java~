@@ -982,7 +982,7 @@ public class Lexer {
           // fall through
           case 14: break;
           case 4:
-            { especialSymbols.put(yytext().toUpperCase(), 0); symbolTable.put("especialSymbols", especialSymbols);
+            { specialSymbols.put(yytext().toUpperCase(), 0); symbolTable.put("specialSymbols", specialSymbols);
             }
           // fall through
           case 15: break;

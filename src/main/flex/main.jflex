@@ -19,7 +19,7 @@ import java.util.TreeMap;
     private Map<String, Integer> keywords = new TreeMap<>();
     private Map<String, Integer> classes = new TreeMap<>();
     private Map<String, Integer> properties = new TreeMap<>();
-    private Map<String, Integer> especialSymbols = new TreeMap<>();
+    private Map<String, Integer> specialSymbols = new TreeMap<>();
     private Map<String, Integer> individuals = new TreeMap<>();
     private Map<String, Integer> namespaces = new TreeMap<>();
     private Map<String, Integer> datatypes = new TreeMap<>();
@@ -88,7 +88,7 @@ SpecialSymbol = {LeftParen} | {RightParen} | {LeftBracket} | {RightBracket} | {C
 {Property}     { properties.put(yytext().toUpperCase(), 0); symbolTable.put("properties", properties); }
 {Individual}   { individuals.put(yytext().toUpperCase(), 0); symbolTable.put("individuals", individuals); }
 {Cardinalidade} { cardinalities.put(yytext().toUpperCase(), 0); symbolTable.put("cardinalities", cardinalities); }
-{SpecialSymbol} { especialSymbols.put(yytext().toUpperCase(), 0); symbolTable.put("especialSymbols", especialSymbols); }
+{SpecialSymbol} { specialSymbols.put(yytext().toUpperCase(), 0); symbolTable.put("specialSymbols", specialSymbols); }
 {Namespace}    { namespaces.put(yytext().toUpperCase(), 0); symbolTable.put("namespaces", namespaces); }
 {Spaces}       { /* ignore */ }
 .              { throw new RuntimeException("Illegal character <" + yytext() + ">"); }

@@ -543,7 +543,7 @@ public class Lexer {
     private Map<String, Integer> keywords = new TreeMap<>();
     private Map<String, Integer> classes = new TreeMap<>();
     private Map<String, Integer> properties = new TreeMap<>();
-    private Map<String, Integer> especialSymbols = new TreeMap<>();
+    private Map<String, Integer> specialSymbols = new TreeMap<>();
     private Map<String, Integer> individuals = new TreeMap<>();
     private Map<String, Integer> namespaces = new TreeMap<>();
     private Map<String, Integer> datatypes = new TreeMap<>();
@@ -982,7 +982,7 @@ public class Lexer {
           // fall through
           case 14: break;
           case 4:
-            { especialSymbols.put(yytext().toUpperCase(), 0); symbolTable.put("especialSymbols", especialSymbols);
+            { specialSymbols.put(yytext().toUpperCase(), 0); symbolTable.put("specialSymbols", specialSymbols);
             }
           // fall through
           case 15: break;
